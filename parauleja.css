@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+#particles-js{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+#principal{
+    color:aliceblue;
+}
+   
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 90px;
+    margin-right: 10px;
+    width: 130x;
+    cursor: pointer;
+}
+
+#logo{
+    font-size: 60px;
+    margin-top: 60px;
+    color: white;
+}
+
+.menu-icon{
+    width: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin-top: 40px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h2{
+    color: #fff;
+    font-size: 100px;
+}
+
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+
+
+
+.carta{
+    position: relative;
+    float: right;
+    top: 150px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 350px;
+}
+
+.carta .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#lletres {
+    position: absolute;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 85px;
+    font-size: 100px;
+    line-height: 45px;
+    color: black;
+}
+
+.carta .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 8px #fff;  
+    border: 1px solid white;
+}
+
+.carta .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+#joc2 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    text-shadow: 0 5px 10px #000;
+}
+
+.carta .back img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+#cercle {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(231, 114, 114);
+    top: 40px;
+    left: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 25px red;
+    
+}
+
+.carta .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #fff;
+    padding: 15px;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fff;  
+
+}
+
+.carta:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+
+.carta:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+} 
+
+
+#info {
+    position: relative;
+    top: 400px;
+    margin-left: 200px;
+    background-color: gray;
+    border-radius: 20px;
+    color: white;
+}
+
+#pop {
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border: 2px;
+    background-color: rgb(206, 228, 236);
+    
+}
+
+#creu {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #000;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#creu:hover{
+    background-color: firebrick;
+    transition: .4s;
+}
+
+#comesjuga{
+    color: black;
+    size: 50px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+#info:hover{
+    background-color: firebrick;
+}
+
+#text {
+    color: black;
+    font-size: 15px;
+    margin: 35px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+span {
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+}
+
+#trec{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-top: 70px;
+}
+
+#descrip{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+.intro{
+    position: relative;
+    top: 260px;
+    margin-left: 100px;
+}
+
+#resposta{
+    height: 30px;
+    width: 300px;
+}
+
+#buto {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+}
+
+#buto:hover{
+    background-color: firebrick;
+}
+
+.comptador{
+    position: absolute;
+    left: 1100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(231, 114, 114);
+    display: none;
+}
+
+.numero{
+    color: rgb(163, 24, 71);
+}
+
+#tematica{
+    float: right;
+    margin-top: 150px;
+    margin-right: 10px;
+    background-color: rgb(231, 114, 114);
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+
+#random_img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+} 
+
+#startbutton{
+    width: 100%;
+    height: 50px;
+}
+
+#començar{
+    position: relative;
+    top: 275px;
+    right: 55px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#començar:hover{
+    background-color: firebrick;
+}
+
+.score{
+    position: relative;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color:  rgb(231, 114, 114);
+}
+
+#ia #jug{
+    position: absolute;
+    top:50px;
+}
+
+.solucio{
+    display: none;
+    width: 200px;
+    top: 150px;
+    background-color: rgba(236, 49, 49, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+.respostaIA{
+    display: none;
+    width: 200px;
+    top: 320px;
+    background-color: rgba(146, 233, 96, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+ 

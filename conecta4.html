@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRES EN RATLLA</title>
+    <link rel="icon" href="img/hchchc-removebg-preview.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <img src="img/image (1).png" class="logo"><h1 id="logo">EUPHORBIA</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="trec.html">TREC</a></li>
+                    <li><a href="code.html">CODE</a></li>
+                </ul>
+            </nav>
+            <img src="img/image (1).png" class="menu-icon">
+        </div>
+        <div class="botones">
+            <button id="newGameAI" class="controlButtonh">
+              <p>Humano vs IA</p>
+            </button>
+          </div>
+          <div class="modoactual">
+            <h2 id="modo"></h2>
+          </div>
+          <div id="main">
+            <div id="buttonGrid">
+              <button id="a" class="gameButton" type="button"></button>
+              <button id="b" class="gameButton" type="button"></button>
+              <button id="c" class="gameButton" type="button"></button>
+              <button id="d" class="gameButton" type="button"></button>
+              <button id="e" class="gameButton" type="button"></button>
+              <button id="f" class="gameButton" type="button"></button>
+              <button id="g" class="gameButton" type="button"></button>
+              <button id="h" class="gameButton" type="button"></button>
+            </div>
+      
+            <div id="gameGrid">
+              <div id="a8" class="slot"></div>
+              <div id="b8" class="slot"></div>
+              <div id="c8" class="slot"></div>
+              <div id="d8" class="slot"></div>
+              <div id="e8" class="slot"></div>
+              <div id="f8" class="slot"></div>
+              <div id="g8" class="slot"></div>
+              <div id="h8" class="slot"></div>
+      
+              <div id="a7" class="slot"></div>
+              <div id="b7" class="slot"></div>
+              <div id="c7" class="slot"></div>
+              <div id="d7" class="slot"></div>
+              <div id="e7" class="slot"></div>
+              <div id="f7" class="slot"></div>
+              <div id="g7" class="slot"></div>
+              <div id="h7" class="slot"></div>
+      
+              <div id="a6" class="slot"></div>
+              <div id="b6" class="slot"></div>
+              <div id="c6" class="slot"></div>
+              <div id="d6" class="slot"></div>
+              <div id="e6" class="slot"></div>
+              <div id="f6" class="slot"></div>
+              <div id="g6" class="slot"></div>
+              <div id="h6" class="slot"></div>
+      
+              <div id="a5" class="slot"></div>
+              <div id="b5" class="slot"></div>
+              <div id="c5" class="slot"></div>
+              <div id="d5" class="slot"></div>
+              <div id="e5" class="slot"></div>
+              <div id="f5" class="slot"></div>
+              <div id="g5" class="slot"></div>
+              <div id="h5" class="slot"></div>
+      
+              <div id="a4" class="slot"></div>
+              <div id="b4" class="slot"></div>
+              <div id="c4" class="slot"></div>
+              <div id="d4" class="slot"></div>
+              <div id="e4" class="slot"></div>
+              <div id="f4" class="slot"></div>
+              <div id="g4" class="slot"></div>
+              <div id="h4" class="slot"></div>
+      
+              <div id="a3" class="slot"></div>
+              <div id="b3" class="slot"></div>
+              <div id="c3" class="slot"></div>
+              <div id="d3" class="slot"></div>
+              <div id="e3" class="slot"></div>
+              <div id="f3" class="slot"></div>
+              <div id="g3" class="slot"></div>
+              <div id="h3" class="slot"></div>
+      
+              <div id="a2" class="slot"></div>
+              <div id="b2" class="slot"></div>
+              <div id="c2" class="slot"></div>
+              <div id="d2" class="slot"></div>
+              <div id="e2" class="slot"></div>
+              <div id="f2" class="slot"></div>
+              <div id="g2" class="slot"></div>
+              <div id="h2" class="slot"></div>
+      
+              <div id="a1" class="slot"></div>
+              <div id="b1" class="slot"></div>
+              <div id="c1" class="slot"></div>
+              <div id="d1" class="slot"></div>
+              <div id="e1" class="slot"></div>
+              <div id="f1" class="slot"></div>
+              <div id="g1" class="slot"></div>
+              <div id="h1" class="slot"></div>
+            </div>
+          </div>
+          <div class="ganador">
+            <h1 id="ganadorletra"></h1>
+          </div>
+          
+
+    <script src="conecta4.js"></script>
+       
+<div id="particles-js"></div>
+
+<script src="particles.min.js"></script>
+<script>
+    particlesJS(
+        {
+            "particles": {
+                "number": {
+                    "value": 90,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg", /** gfhdjksdfjhdjfhghfjdkdjvbdnjcvhfjdfhdjskjdfhdjfhdjfghvncj**/
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked":{
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 11.22388442605866,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true                        
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }                            
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        }
+    )
+</script>
+
+</body>
+</html>

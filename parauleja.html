@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRES EN RATLLA</title>
+    <link rel="icon" href="img/image-_1_ (1).ico">
+    <link rel="stylesheet" href="parauleja.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <img src="img/image (1).png" class="logo"><h1 id="logo">EUPHORBIA</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="trec.html">TREC</a></li>
+                    <li><a href="code.html">CODE</a></li>
+                </ul>
+            </nav>
+            <img src="img/image (1).png" class="menu-icon">
+        </header>
+        
+        <div class="carta">
+            <div class="face front" id="front">
+                <img src="img/parauleja.png">
+                <h1 id="joc2">PARAULEJA</h1>
+            </div>
+            <div class="face back" id="back">
+                <img src="img/back+.png">
+                <div id="cercle">
+                    <h1 id="lletres"></h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="tematica">
+            <img id="random_img"/>
+        </div>
+        <div id="startbutton">
+            <button id="començar" onclick=" get_random_imagecolor()">COMENÇAR<i class="fas-fa-random"></i></button>
+        </div>
+
+        <div class="intro">
+            <form method="post">
+                <input type="text" placeholder="RESPOSTA" id="resposta">
+                <input type="submit" value="INTRODUIR" onclick="guardar()"  id="buto">
+            </form>
+        </div> 
+        <div class="comptador">
+            <span class="numero">10</span>
+        </div>    
+
+        <div class="solucio">
+            <div class="text"></div>
+        </div>
+        <div class="respostaIA">
+            <div class="text"></div>
+        </div>
+        
+        <button  id="info" onclick="pop.showModal()">COM ES JUGA?</button>
+        <dialog id="pop">
+            <button id="creu" onclick="pop.close()">X</button>
+            <p id="comesjuga">COM ES JUGA?</p>
+            <p id="text"> El joc Parauleja funciona de la següent manera:<br>
+                En primer lloc, tens cinc temàtiques: animals, menjars, professions, noms i plantes/flors. En el quadrat apareixerà una imatge que concordarà amb una d'aquestes temàtiques. <br> D'altra banda, si passes per sobre de la carta que posa "Parauleja", es girarà i apareixerà una lletra. El teu objectiu és introduir, on posa resposta, una paraula que comenci per aquella lletra i que sigui de la temàtica correcta abans que s'acabi el temps. <br>
+                En cas que sigui incorrecta se't proporcionarà una resposta correcta i per tornar a iniciar el joc hauràs de clicar "Començar".<br>
+                <span>Tens ganes de posar-ho a prova?</span><br><br>
+                NOTA: Les respostes han d'estar escrites la primera lletra en majúscula i la resta en minúscula i sense faltes d'ortografia.
+            </p>
+        </dialog>
+
+
+        </div>
+    
+    
+    <script src="parauleja.js"></script>
+    
+       
+<div id="particles-js"></div>
+
+<script src="particles.min.js"></script>
+<script>
+    particlesJS(
+        {
+            "particles": {
+                "number": {
+                    "value": 90,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg", /** gfhdjksdfjhdjfhghfjdkdjvbdnjcvhfjdfhdjskjdfhdjfhdjfghvncj**/
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked":{
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 11.22388442605866,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true                        
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }                            
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        }
+    )
+</script>
+</body>
+</html>
